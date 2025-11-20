@@ -22,7 +22,7 @@
       { duration: 1200, color: '#000000' }, // Svart i 1200 ms
       { duration: 250, color: '#FF0000' },  // Fade till röd över 250 ms
       { duration: 2000, color: '#FF0000' }, // Visar röd i 2000 ms
-      { duration: 1500, color: '#000000' }  // Fade till svart över 1500 ms
+      { duration: 500, color: '#000000' }  // Fade till svart över 500 ms
     ];
 
     const root = document.body;
@@ -45,7 +45,7 @@
 
       // Fade tillbaka till svart
       root.style.backgroundColor = '#000000';
-      await sleep(1500);
+      await sleep(500);
 
       // Upprepa
       runSequence();
@@ -58,4 +58,5 @@
     });
   </script>
 </body>
+
 </html>
