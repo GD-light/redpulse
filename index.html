@@ -11,7 +11,7 @@
     }
     body {
       background-color: #000000; /* Start i svart */
-      transition: background-color 0.25s ease-in-out; /* Fade-tid används av JS när färgen ändras */
+      transition: background-color 1.25s ease-in-out; /* Fade-tid används av JS när färgen ändras */
     }
   </style>
 </head>
@@ -22,7 +22,7 @@
       { duration: 500, color: '#000000' }, // Svart i 1200 ms
       { duration: 250, color: '#FF0000' },  // Fade till röd över 250 ms
       { duration: 2000, color: '#FF0000' }, // Visar röd i 2000 ms
-      { duration: 500, color: '#000000' }  // Fade till svart över 500 ms
+      { duration: 1250, color: '#000000' }  // Fade till svart över 500 ms
     ];
 
     const root = document.body;
@@ -60,4 +60,5 @@
 </body>
 
 </html>
+
 
